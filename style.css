@@ -378,7 +378,7 @@ input:hover + ::placeholder{
     --webkit-transition: all 0.3s ease-in-out;
     
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 420px){
     header{
         height: 70vh;
         width: 100vw;
