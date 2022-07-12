@@ -378,16 +378,20 @@ input:hover + ::placeholder{
     --webkit-transition: all 0.3s ease-in-out;
     
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 768px){
     header{
         height: 70vh;
         width: 100vw;
+        display: flex;
+        flex-direction: column;
     }
     .couch{
-        width: 75vw;
-        height: 20vh;
-        top: 57vh;
-        left: 12.5vw;
+        position: static;
+        width: 400px;
+        height: 30vh;
+        margin: auto;
+        margin-top: 40vh;
+
     }
     .nav{
         position: static;
@@ -432,14 +436,13 @@ input:hover + ::placeholder{
     }
     .app{
         margin: auto;
-        height: 50vh;
-        width:40vw;
-        position: absolute;
-        top: 27vh;
-        left: 30vw;
+        height: 65vh;
+        width: 220px;
+        position: static;
+        margin-top: -62vh;
     }
     .download{
-        margin-top: 15vh;
+        margin-top: 18vh;
         font-size: .7em;
         font-weight: 700;
         padding: 10px 20px;
@@ -492,20 +495,28 @@ input:hover + ::placeholder{
         display: none;
     }
     .thirdsectimg ~ img{
-        position: unset;
-        width: 70vw;
+        position: static;
+        display: block;
+        width: 300px;
+        height: 400px;
+        margin-top: 10vh;
+        
+
     }
     .secondsection{
        width: 100%;
        padding: 0;
-       height: 80vh;
+       min-height: 90vh;
+       padding-bottom: 10vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
        
     }
     .row{
-        height: 5%;
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 95%;
         gap: 15px;
         flex-wrap: wrap;
         padding: 0;
@@ -514,7 +525,6 @@ input:hover + ::placeholder{
     }
     .secondsection h1{
         font-size: 1.2em;
-        margin-top: -45vh;
         
     }
     .secondsection p{
@@ -528,8 +538,8 @@ input:hover + ::placeholder{
         width: 4em;
     }
     .row span{
-        height: 5em;
-        width: 5em;
+        height: 6em;
+        width: 6em;
         margin: auto;
     }
     .thirdsection{
@@ -543,7 +553,7 @@ input:hover + ::placeholder{
         
     }
     .thirdsecttext h1{
-        font-size: 1.5em;
+        font-size: 6vw;
     }
 
     .thirdsecttext p{
@@ -615,7 +625,7 @@ textarea{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     font-size: .8em;
     font-weight: 700;
     gap: 20px;
@@ -633,6 +643,7 @@ textarea{
     align-items: center;
     padding: 20vh;
     width: 100%;
+    gap: 10px;
     z-index: 18;
     transition: 1s ease;
     background-color: var(--dark-gold);
@@ -661,4 +672,23 @@ textarea{
 
 .btnblack{
     background-color: var(--black);
+}
+
+@media screen and (max-width: 400px) {
+    .couch{
+        position: static;
+        width: 240px;
+        height: 20vh;
+        margin: auto;
+        margin-top: 47vh;
+    
+    }
+    
+    .app{
+        margin: auto;
+        height: 50vh;
+        width:140px;
+        position: static;
+        margin-top: -50vh;
+    }
 }
