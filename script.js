@@ -23,7 +23,7 @@ var slide = document.getElementById('slide')
 ham.addEventListener('click', ()=>{
     ham.classList.toggle('active')
     if (ham.classList.contains('active')){
-        slide.style.top = '10vh'
+        slide.style.top = '0vh'
         slide.style.height = '600vh'
         
     }else{
