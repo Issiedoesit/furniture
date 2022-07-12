@@ -1,0 +1,59 @@
+break point 1:
+768
+
+.app{
+    position: absolute;
+    width: 256;
+    left:calc((100vw - 270px)/2);
+    top: 40vh; 
+    height: 504px; 
+}
+
+breakpoint 2:
+340px
+
+breakpoint 2:
+1024px
+
+gold:
+#dba10a
+
+yellow:
+#f5c513
+
+red-button:
+#ef4444
+
+
+.couch{
+    width: 95vw;
+    position: absolute;
+    left: 2.5vw;
+    top: 52vh;
+    height: 75vh;
+}
+
+.app{
+    position: absolute;
+    width: 300px;
+    left:calc((100vw - 300px)/2);
+    top: 40vh;  
+}
+
+    <div class="slide" id="slide">
+            <div class="slidelinkwrap">
+                <a>HOME</a>
+                <a>CONTACT</a>
+            </div>
+            <div class="slidebtnwrap">
+                <button class="slidebtn btnred">LOGIN</button>
+                <button class="slidebtn btnblack">SIGN UP</button>
+              </div>
+          </div>
+
+
+          <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+          </div>

@@ -1,0 +1,664 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+:root{
+--dark-gold:#ca8a04;
+--gold:#dba10a;
+--yellow:#f5c513;
+--black:black;
+--white:white;
+--red-button:#ef4444;
+--red-two:#dc2626;
+--box-shadow:2px 2px 4px rgb(150, 150, 150);;
+--hover-opacity:80%;
+--form-border-color:#404040;
+--font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    font-family: var(--font-family);
+}
+
+nav{
+    font-weight: 500;
+    font-size: 1.1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 31px 45px;
+}
+
+.logonav{
+    width: 300px; 
+    margin-left: 50px;
+}
+header{
+
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, var(--dark-gold), var(--gold), var(--yellow));
+}
+.couch{
+    position: absolute;
+    left: 2vw;
+    top: 53vh;
+    height: 75vh;
+}
+button, .download{
+    box-shadow: var(--box-shadow);
+}
+.app{
+    position: absolute;
+    width: 290px;
+    left:calc((100vw - 300px)/2);
+    top: 43vh;  
+    height: 540px;
+}
+
+nav button{
+    padding: 20px 15px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttonred{
+    background-color: var(--red-button);
+    color: var(--white);
+}
+.buttonblack{
+    background-color: var(--black);
+    color: var(--white);
+}
+.navlink a:hover, .buttonblack:hover, .buttonred:hover{
+    opacity: var(--hover-opacity);
+    cursor: pointer;
+}
+.navlink{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.navlink a, .navlink button{
+    margin-left: 20px;
+}
+.firstsection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    width: 99%;
+    justify-content: space-evenly;
+    margin-top: 12vh;
+}
+.dots, .features div{
+    height: 100%;
+}
+.dots{
+    width: 12%;
+    height: 100%;
+}
+.featurectn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-align: center;
+    margin-top: 5vh;
+}
+.featuremargin{
+    margin: 20px 0px;
+}
+
+.download{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    margin-top: 33vh;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: var(--dark-gold);
+}
+
+.downloadbtn img{
+    width: 1.2em;
+    margin-right: 10px;
+}
+.fa-brands:not(.fa-down-to-line), .fa-solid:not(.fa-down-to-line){
+    font-size: 2em;
+    padding: 16px;
+    border-radius: 50%;
+    border: solid 8px var(--dark-gold);
+}
+.lni{
+    font-weight: 900;
+}
+.secondsection{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+}
+
+.secondsection h1{
+    color: var(--dark-gold);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.secondsection p{
+    color: var(--white);
+    text-align: center;
+    width: 42%;
+    margin-top: 5vh;
+
+}
+.secondsection span{
+    background-color: var(--white);
+   height: 7em;
+   width: 7em;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.download:hover, .thirdsectbtn:hover{
+    cursor: pointer;
+    background-color: var(--red-two);
+    color: var(--white);
+}
+.row.one img{
+    margin: auto;
+}
+
+.row{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdsection{
+    margin-top: 10vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding: 10%;
+    
+}
+.thirdsecttext{
+ width: 45%;
+}
+
+.thirdsecttext h1{
+    font-size: 2.5em;
+    margin:1.5vh 0vh;
+}
+
+.thirdsecttext p{
+    margin: 1.5vh 0vh;
+}
+.thirdsectimg{
+    height: 60vh;
+    width: 30vw;
+    position: absolute;
+    top: 48vh;
+    left: 68%;
+    border: solid 8px var(--dark-gold);
+    border-radius: 50%;
+}
+.thirdsection img{
+    position: absolute;
+    left: 49vw;
+    top: 3vh;
+}
+
+.thirdsectbtn{
+    border: none;
+    padding: 10px 30px;
+    background-color: var(--dark-gold);
+    font-weight: 600;
+    font-size: 1em;
+    margin: 3vh 0vh;
+    border-radius: 5px;
+}
+
+.fourthsection{
+    margin-top: 15vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10vh;
+    justify-content: space-evenly;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px var(--form-border-color);
+    border-radius: 5px;
+    height: 75vh;
+    width: 40vw;
+    align-self: center;
+    margin-top: -10vh;
+
+}
+label, form h1{
+    align-self: flex-start;
+    padding-left: 5%;
+}
+label, input{
+    margin: 1vh 0vh;
+}
+form h1{
+    margin: 1vh 0vh;
+    font-size: 2em;
+    
+}
+input{
+    border: solid 4px var(--dark-gold) ;
+    border-radius: 5px;
+    padding: 4px;
+    width: 90%;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+
+textarea{
+    width: 90%;
+    border: solid 4px var(--dark-gold) ;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top:5%;  
+    position: relative;
+}
+
+.fourth{
+    margin-top: 10vh;
+    width: 200px;
+    padding: 10px 5px;
+    text-align: justify;
+}
+
+.fourthsectapp{
+    margin-left: -4vh;
+    width: 250px;
+}
+label{
+    font-weight: 700;
+    color: var(--black);
+    font-size: .9em;
+}
+
+input:hover + ::placeholder{
+    color: red;
+}
+.messagelabel{
+    padding: 0vh 4vh;
+    color: var(--black);
+    padding-left: 6%;
+    position: absolute;
+    left: 44vw;
+    margin-top: 6vh;
+    z-index: 3;
+    font-size: .9em;
+    
+}
+.fourthbtn{
+    align-self: start;
+    margin-left: 5%;
+}
+
+.input-wrap, .textarea-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-wrap:focus-within label{
+    color: var(--dark-gold);
+}
+.textarea-wrap:focus-within .messagelabel{
+    color: var(--gold);
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 20;
+    
+}
+.hamburger:hover .line{
+    background-color: var(--white);
+}
+
+.line{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 2px 0px;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+    --webkit-transition: all 0.3s ease-in-out;
+    
+}
+@media screen and (max-width: 380px){
+    header{
+        height: 70vh;
+        width: 100vw;
+    }
+    .couch{
+        width: 75vw;
+        height: 20vh;
+        top: 57vh;
+        left: 12.5vw;
+    }
+    .nav{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 1vh;
+        align-items: center;
+        position: relative;
+    }
+    nav .one{
+        display: none;
+    }
+    nav .two{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .hamburger.active .line:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .line:nth-child(1){
+        transform: translateY(8px) rotate(45deg) ;
+    }
+    .hamburger.active .line:nth-child(3){
+        transform: translateY(-6px) rotate(-45deg);  
+    }
+    .logonav{
+        height: 1em;
+        width: 6em;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+    .app{
+        margin: auto;
+        height: 50vh;
+        width:40vw;
+        position: absolute;
+        top: 27vh;
+        left: 30vw;
+    }
+    .download{
+        margin-top: 15vh;
+        font-size: .7em;
+        font-weight: 700;
+        padding: 10px 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dots{
+        display: none;
+    }
+    .firstsection{
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .features{
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        width: 99%;
+        justify-content: space-evenly;
+        margin-top: 17vh;
+    }
+   
+    .featurectn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+    .featuremargin{
+        margin: 0vh 0vh;
+    }
+    .featurectn p{
+        font-size: .8em;
+        font-size: 700;
+        padding: 0px 25px;
+    }
+
+    .thirdsection{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .thirdsectimg{
+        display: none;
+    }
+    .thirdsectimg ~ img{
+        position: unset;
+        width: 70vw;
+    }
+    .secondsection{
+       width: 100%;
+       padding: 0;
+       height: 80vh;
+       
+    }
+    .row{
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        margin-top: 5vh;
+    }
+    .secondsection h1{
+        font-size: 1.2em;
+        margin-top: -45vh;
+        
+    }
+    .secondsection p{
+        font-size: .8em;
+        width: 95%;
+        padding: 0px 3px;
+      
+    }
+    .row img{
+        height: 4em;
+        width: 4em;
+    }
+    .row span{
+        height: 5em;
+        width: 5em;
+        margin: auto;
+    }
+    .thirdsection{
+        width: 100%;
+        padding: 0;
+    }
+    .thirdsecttext{
+        width: 100%;
+        margin: 0;
+        padding: 0px 20px;
+        
+    }
+    .thirdsecttext h1{
+        font-size: 1.5em;
+    }
+
+    .thirdsecttext p{
+        font-size: .8em;
+        font-weight: 500;
+        width: 100%;
+        padding: 0;
+        padding-right: 10px ;
+    }
+
+    .thirdsectbtn{
+        font-size: .7em;
+        padding: 8px 15px;
+        font-weight: 700;
+    }
+}
+
+.fourthsection{
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    padding-bottom: 5vh;
+}
+.downloadbtn img{
+    position: unset;
+    padding: 0;
+    margin: 0;
+    height: 40vh;
+    width: 40vw;
+    margin: auto;
+}
+.fourthsectapp{
+    display: none
+}
+
+.fourth{
+    margin: auto;
+    margin: 8vh 0vh;
+}
+form{
+    border: solid 3px var(--black);
+    width: 85vw;
+    margin: auto;
+    margin-top: 5vh;
+    font-size: 70%;
+    height: 100%;
+}
+input{
+    height: 5vh;
+    border: solid 3px var(--dark-gold);
+}
+textarea{
+    border: solid 3px var(--dark-gold);
+}
+
+.messagelabel{
+    left: 30px;
+}
+
+.fourthbtn{
+    font-size: 1.1em;
+    font-weight: 700;
+    
+}
+.slidelinkwrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    font-size: .8em;
+    font-weight: 700;
+    gap: 20px;
+    align-items: center;
+    z-index: 18;
+    
+}
+
+.slide{
+    position: absolute;
+    top: -100vh;
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20vh;
+    width: 100%;
+    z-index: 18;
+    transition: 1s ease;
+    background-color: var(--dark-gold);
+    margin: 0;
+}
+.slidebtnwrap{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.slidebtnwrap button{
+    border-radius: 5px;
+    font-size: .7em;
+    width: 200px;
+    padding: 15px 0px;
+    z-index: 18;
+    box-shadow: none;
+    font-weight: 600;
+    color: var(--white);
+    outline: none;
+    border:none;
+}
+.btnred{
+    background-color: var(--red-two);
+}
+
+.btnblack{
+    background-color: var(--black);
+}
